@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Karla, sans-serif;
+  font-size: 100%;
+  background: hsl(204, 43%, 93%);
+  max-width: 90rem;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 41rem;
+  max-height: 60rem;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 9px 10px -9px rgba(0, 0, 0, 0.7);
+}
+
+.main header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 2rem 3rem;
+  background-color: #fff;
+}
+
+.main header h1 {
+  padding: 1rem 1.8rem 1.2rem 0.9rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+}
+
+.main header h2 {
+  padding: 0.6rem 1.8rem 0.6rem 0.9rem;
+  font-size: 1.4rem;
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+
+.main header p {
+  padding: 0.7rem 0.8rem 1.8rem 0.9rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(218, 22%, 67%);
+}
+
+.main .section {
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+
+.main .section .section-one {
+  padding: 1.8rem 2rem;
+  margin: 0;
+  flex: 1;
+  background-color: hsl(179, 62%, 43%);
+  text-align: left;
+  width: 100%;
+}
+
+.main .section .section-one h2,
+.main .section .section-two h2 {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.8rem 2rem 0.2rem 2rem;
+}
+
+.main .section .section-one p {
+  padding: 0.6rem 2rem 0 2rem;
+}
+
+.main .section .section-one p strong {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.main .section .section-one p span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.main .section .section-one .text {
+  color: #fff;
+  font-size: 0.85rem;
+  padding-bottom: 1.4rem;
+}
+
+.main .section .section-one .btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.9rem;
+  width: 75%;
+  border: none;
+  border-radius: 4px;
+  background-color: hsl(71, 73%, 54%);
+  color: whitesmoke;
+  font-weight: bold;
+  box-shadow: 2px 9px 22px -9px rgba(0, 0, 0, 0.7);
+}
+
+.main .section .section-two {
+  padding: 1.8rem 2rem;
+  margin: 0;
+  flex: 1;
+  background-color: rgba(42, 178, 175, 0.4);
+}
+
+.main .section .section-two ul {
+  list-style: none;
+  padding: 0.8rem 2rem 0.2rem 2rem;
+}
+
+.main .section .section-two ul li {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgba(245, 245, 245, 0.7);
+}
+
+@media (max-width: 500px) {
+  .main {
+    max-width: 20rem;
+    border-radius: 0;
+  }
+
+  .main header {
+    padding: 1.5rem;
+  }
+
+  .main header h1 {
+    padding: 0.8rem 1.8rem 1rem 0.7rem;
+    font-size: 1rem;
+  }
+
+  .main header h2 {
+    padding: 0.8rem 1.6rem 1rem 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .main header p {
+    padding: 0.8rem 1.6rem 1rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .main .section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main .section .section-one {
+    padding: 1.5rem;
+  }
+
+  .main .section .section-one h2,
+  .main .section .section-two h2 {
+    padding: 0.8rem 1.6rem 0.7rem 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .main .section .section-one p {
+    padding: 0 1.6rem 1rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .main .section .section-one .btn {
+    padding: 0.8rem;
+    width: 90%;
+  }
+
+  .main .section .section-two {
+    padding: 1.5rem;
+  }
+
+  .main .section .section-two ul {
+    padding: 0.8rem 1.6rem 0.7rem 0.7rem;
+    font-size: 0.7rem;
+  }
+}
